@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Health Insurance Information Form</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="number" name="age" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+                <textarea name="address" rows="3" placeholder="Street Address" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="zip" placeholder="Zip Code" required>
+                <input type="text" name="country" placeholder="Country" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="spouse_name" placeholder="Spouse's Name">
+                <input type="number" name="spouse_age" placeholder="Spouse Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="children_name" placeholder="Children (under age 26) Name">
+                <input type="number" name="children_age" placeholder="Children Age">
+            </div>
+            <div class="form-group radio-group full-width">
+                <label>Does your employer offer health insurance?</label>
+                <label>
+                    <input type="radio" name="employer_health_insurance" value="yes" required>
+                    <span>Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="employer_health_insurance" value="no" required>
+                    <span>No</span>
+                </label>
+            </div>
+            <div class="form-group radio-group full-width">
+                <label>Do you receive Medicare?</label>
+                <label>
+                    <input type="radio" name="medicare" value="yes" required>
+                    <span>Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="medicare" value="no" required>
+                    <span>No</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="3" placeholder="Any Message"></textarea>
+            </div>
+            <div class="form-group submit-btn">
+                <button type="submit">SEND</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
